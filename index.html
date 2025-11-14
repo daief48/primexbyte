@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeByte | Smart web & app solutions for Bangladesh</title>
+    <meta
+      name="description"
+      content="PrimeByte delivers hand-crafted web, mobile, and eCommerce solutions—fast, secure, and affordable for Bangladeshi businesses."
+    />
+    <!-- Favicon suggestion (Simple SVG circle with PB text) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23003366%22/><text x=%2250%%22 y=%2255%%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-family=%22system-ui, sans-serif%22>PB</text></svg>"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJc5fS1X3uP+9j0pP6nN+9bX6xKjS9o5uR6a1J9M0tE8Xqf9pT+4W0l00l7N4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+<meta name="description" content="PrimeByte delivers high-quality website development, mobile apps, and digital solutions for businesses in Bangladesh. Fast, secure, SEO-friendly and modern services to grow your brand.">
+
+<meta name="keywords" content="web development Bangladesh, app development Bangladesh, software company Bangladesh, PrimeByte, website design BD, mobile app BD, IT services Bangladesh">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="PrimeByte">
+
+<!-- Open Graph for social sharing -->
+<meta property="og:title" content="PrimeByte | Smart Web & App Solutions for Bangladesh">
+<meta property="og:description" content="Professional web and app development services for Bangladeshi businesses. Modern, secure, and SEO-optimized solutions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="YOUR-IMAGE-URL">
+<meta property="og:url" content="https://your-website.com">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PrimeByte | Smart Web & App Solutions for Bangladesh">
+<meta name="twitter:description" content="Professional web & app development services tailored for Bangladesh.">
+<meta name="twitter:image" content="YOUR-IMAGE-URL">
+
+<!-- Mobile & performance -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>
+      /* ===================================================
+           1. THEME VARIABLES
+        =================================================== */
+      :root {
+        --pb-primary: #003366; /* Deep Navy — primary */
+        --pb-accent: #1e88e5; /* Royal Blue — accent */
+        --pb-highlight: #00b8d9; /* Warm Cyan — highlights */
+        --pb-muted: #6b7280; /* Neutral gray */
+        --pb-bg: #f8fafc; /* Page background */
+        --pb-card: #ffffff; /* Card background */
+        --pb-radius: 1rem;
+
+        --pb-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        --pb-shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+
+      /* ===================================================
+           2. GLOBAL STYLES & TYPOGRAPHY
+        =================================================== */
+      body {
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        background-color: var(--pb-bg);
+        color: #333;
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: var(--pb-primary);
+      }
+
+      .section-padding {
+        padding: 5rem 0;
+      }
+
+      /* Reusable components */
+      .rounded-card {
+        background-color: var(--pb-card);
+        border-radius: var(--pb-radius);
+        box-shadow: var(--pb-shadow-sm);
+        transition: all 0.3s ease-in-out;
+        border: 1px solid rgba(0, 51, 102, 0.05); /* Very light border */
+      }
+
+      .rounded-card:hover,
+      .rounded-card:focus-within {
+        box-shadow: var(--pb-shadow-md);
+        transform: translateY(-3px);
+        outline: 2px solid var(--pb-accent);
+        outline-offset: 3px;
+      }
+
+      /* ===================================================
+           3. BUTTON & FORM STYLES
+        =================================================== */
+      .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: var(--pb-primary);
+        --bs-btn-border-color: var(--pb-primary);
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #004488; /* Slightly darker */
+        --bs-btn-hover-border-color: #004488;
+        --bs-btn-focus-shadow-rgb: 30, 136, 229; /* Using accent for focus */
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: var(--pb-highlight);
+        --bs-btn-active-border-color: var(--pb-highlight);
+        border-radius: 0.5rem;
+        box-shadow: var(--pb-shadow-sm);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-accent {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: var(--pb-accent);
+        --bs-btn-border-color: var(--pb-accent);
+        --bs-btn-hover-bg: #1a73c2;
+        --bs-btn-hover-border-color: #1a73c2;
+      }
+
+      .btn-primary:hover,
+      .btn-accent:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+      }
+
+      .form-control {
+        border-radius: 0.5rem;
+      }
+
+      /* ===================================================
+           4. NAVIGATION
+        =================================================== */
+      .navbar {
+        background-color: var(--pb-card);
+        box-shadow: var(--pb-shadow-sm);
+        z-index: 1030;
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--pb-primary) !important;
+        font-size: 1.5rem;
+      }
+
+      .nav-link {
+        color: var(--pb-primary);
+        font-weight: 500;
+        transition: color 0.3s;
+        position: relative;
+      }
+
+      .nav-link:hover {
+        color: var(--pb-accent) !important;
+      }
+
+      /* Active link indicator */
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--pb-accent);
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 70%;
+      }
+
+      /* ===================================================
+           5. HERO CAROUSEL STYLES
+        =================================================== */
+      #hero-slider {
+        margin-top: 56px; /* Adjust for sticky navbar height */
+      }
+
+      .carousel-item {
+        height: 80vh; /* Responsive height */
+        min-height: 400px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+      }
+
+      /* Subtle gradient overlay for text contrast */
+      .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 51, 102, 0.7) 0%,
+          rgba(30, 136, 229, 0.3) 100%
+        );
+      }
+
+      .carousel-caption {
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        z-index: 1; /* Above the overlay */
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      /* Staggered Caption Animation */
+      .carousel-caption h1,
+      .carousel-caption p,
+      .carousel-caption .d-grid {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease;
+      }
+
+      .carousel-item.active .carousel-caption h1 {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.3s;
+      }
+
+      .carousel-item.active .carousel-caption p {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.5s;
+      }
+
+      .carousel-item.active .carousel-caption .d-grid {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.7s;
+      }
+
+      /* Carousel Controls & Indicators */
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 10%;
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: var(--pb-highlight);
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+      .carousel-indicators .active {
+        opacity: 1;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+      }
+
+      @media (max-width: 768px) {
+        .carousel-item {
+          height: 60vh;
+        }
+        .carousel-caption {
+          padding-left: 5%;
+          padding-right: 5%;
+          align-items: center;
+          text-align: center;
+        }
+        .carousel-caption h1 {
+          font-size: 1.75rem;
+        }
+        .carousel-caption p {
+          font-size: 1rem;
+        }
+        .carousel-caption .d-grid {
+          display: flex !important;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+
+      /* ===================================================
+           6. ANIMATION & SCROLL REVEAL UTILITIES
+        =================================================== */
+      .reveal {
+        opacity: 0;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        will-change: opacity, transform;
+      }
+
+      .reveal.fade-up {
+        transform: translateY(50px);
+      }
+
+      .reveal.slide-left {
+        transform: translateX(-50px);
+      }
+
+      .reveal.slide-right {
+        transform: translateX(50px);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      /* Staggered effect for child elements inside a revealed container */
+      .reveal.stagger > * {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: none; /* Initial reset */
+      }
+
+      .reveal.stagger.is-visible > * {
+        animation: fade-up-stagger 0.6s ease-out forwards;
+      }
+
+      .reveal.stagger.is-visible > *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .reveal.stagger.is-visible > *:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .reveal.stagger.is-visible > *:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .reveal.stagger.is-visible > *:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .reveal.stagger.is-visible > *:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .reveal.stagger.is-visible > *:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+
+      @keyframes fade-up-stagger {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Prefer reduced motion handling */
+      @media (prefers-reduced-motion) {
+        .reveal,
+        .carousel-caption h1,
+        .carousel-caption p,
+        .carousel-caption .d-grid {
+          opacity: 1;
+          transform: none !important;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+
+      /* ===================================================
+           7. PORTFOLIO & FILTER STYLES
+        =================================================== */
+      .portfolio-filter .btn {
+        border-radius: 50rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        background-color: transparent;
+        color: var(--pb-muted);
+        border: 1px solid rgba(0, 51, 102, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .portfolio-filter .btn.active {
+        background-color: var(--pb-accent);
+        color: var(--pb-card);
+        border-color: var(--pb-accent);
+        transform: scale(1.05);
+      }
+
+      .portfolio-item {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+        padding: 0.75rem; /* For grid spacing */
+      }
+
+      .portfolio-item.hidden {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        transform: scale(0.8);
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .portfolio-card img {
+        border-radius: calc(var(--pb-radius) - 0.5rem);
+      }
+
+      .portfolio-card:hover .portfolio-title {
+        color: var(--pb-accent);
+      }
+
+      /* ===================================================
+           8. PROCESS SECTION
+        =================================================== */
+      .process-step {
+        position: relative;
+        text-align: center;
+      }
+
+      .process-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        background-color: var(--pb-highlight);
+        color: var(--pb-primary);
+        font-size: 1.8rem;
+        margin: 0 auto 1rem;
+        box-shadow: 0 0 0 5px var(--pb-bg), 0 0 0 7px var(--pb-highlight);
+        position: relative;
+        z-index: 2;
+        transition: all 0.4s;
+      }
+
+      .process-step:hover .process-icon {
+        background-color: var(--pb-accent);
+        color: white;
+        transform: translateY(-5px) rotate(5deg);
+      }
+
+      .process-line {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        right: -50%;
+        height: 2px;
+        background-color: var(--pb-muted);
+        z-index: 1;
+        transition: background-color 0.4s;
+      }
+
+      .process-step:last-child .process-line {
+        display: none;
+      }
+
+      @media (max-width: 991px) {
+        .process-line {
+          display: none;
+        }
+      }
+
+      /* ===================================================
+           9. PRICING & TESTIMONIALS
+        =================================================== */
+      .pricing-card {
+        border: 2px solid var(--pb-card);
+        transition: all 0.4s ease-in-out;
+        border-radius: var(--pb-radius);
+        padding: 2.5rem 1.5rem;
+        box-shadow: var(--pb-shadow-sm);
+      }
+
+      .pricing-card:hover {
+        border-color: var(--pb-accent);
+        box-shadow: 0 1rem 2rem rgba(0, 51, 102, 0.2);
+        transform: translateY(-5px);
+      }
+
+      .pricing-card.recommended {
+        border-color: var(--pb-highlight);
+        background-color: var(--pb-primary);
+        color: white;
+        transform: scale(1.05);
+        position: relative;
+        z-index: 10;
+      }
+
+      .pricing-card.recommended .badge-top {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--pb-highlight);
+        color: var(--pb-primary);
+        padding: 0.3rem 1.5rem;
+        border-radius: 50rem;
+        font-weight: 700;
+        box-shadow: var(--pb-shadow-md);
+        animation: pulse-badge 1.5s infinite;
+      }
+
+      .pricing-card.recommended .text-primary,
+      .pricing-card.recommended h3 {
+        color: var(--pb-highlight) !important;
+      }
+
+      .pricing-card.recommended .list-unstyled li {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .pricing-card.recommended .btn-primary {
+        --bs-btn-bg: var(--pb-highlight);
+        --bs-btn-border-color: var(--pb-highlight);
+        --bs-btn-hover-bg: #008899;
+        --bs-btn-hover-border-color: #008899;
+        color: var(--pb-primary);
+        font-weight: 700;
+      }
+
+      @keyframes pulse-badge {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 184, 217, 0.7);
+        }
+        70% {
+          transform: translate(-50%, -50%) scale(1.05);
+          box-shadow: 0 0 0 15px rgba(0, 184, 217, 0);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 184, 217, 0);
+        }
+      }
+
+      .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid var(--pb-accent);
+      }
+
+      /* ===================================================
+           10. FOOTER
+        =================================================== */
+      .footer {
+        background-color: var(--pb-primary);
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .footer a {
+        color: var(--pb-highlight);
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Sticky Top -->
+  <nav
+  class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+  style="backdrop-filter: blur(10px); background-color: rgba(255,255,255,0.95);"
+  aria-label="Main navigation"
+>
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="img/logo.png" alt="PrimeByte Logo" class="logo-img" />
+      <span class="brand-text">
+        prime<span class="brand-x">X</span>Byte
+      </span>
+    </a>
+
+    <!-- Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#process">Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#contact">Contact</a>
+        </li>
+
+        <!-- CTA Button -->
+        <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+          <a
+            href="#"
+            class="btn btn-primary fw-semibold rounded-pill px-4"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            aria-label="Get a Quote for your project"
+          >
+            Get a Quote
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Custom CSS -->
+<style>
+  .logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+  .brand-text {
+    font-weight: 700;
+    color: #0072ff;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+  .brand-x {
+    font-size: 1.8rem;
+    margin-left: -5px;
+    color: #a3a3f1;
+  }
+  @media (max-width: 992px) {
+    .navbar-nav .nav-item {
+      margin-bottom: 0.5rem;
+    }
+  }
+</style>
+
+
+    <main>
+      <!-- ===================================================
+             SECTION 1: HERO / SLIDER (CAROUSEL)
+        =================================================== -->
+      <section id="home" class="p-0">
+        <div
+          id="hero-slider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-pause="hover"
+          aria-roledescription="carousel"
+          aria-label="Hero showcase slider featuring PrimeByte's capabilities"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#hero-slider"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-slider"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-slider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- Slide 1: Primary Hero Content -->
+            <div
+              class="carousel-item active"
+              style="
+                background-image: url('https://framerusercontent.com/images/EkTMxHaZ7FsiD2a9THx5ygIsrY8.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+              role="group"
+              aria-label="Slide 1 of 3, featuring web and app solutions"
+            >
+              <div class="carousel-caption container-fluid">
+                <h1 class="display-3 fw-bold text-white">
+                  We build websites & apps that grow Bangladeshi businesses.
+                </h1>
+                <p class="lead text-light my-4">
+                  Hand-crafted web, mobile, and eCommerce solutions — fast,
+                  secure, and affordable.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-start">
+                  <!-- Primary Gradient Button -->
+                  <button
+                    type="button"
+                    style="
+                      background: linear-gradient(135deg, #00c6ff, #0072ff);
+                      color: #fff;
+                      border: none;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)';"
+                    data-bs-toggle="modal"
+                    data-bs-target="#contactModal"
+                  >
+                    Get a Quote
+                  </button>
+
+                  <!-- Outline Button -->
+                  <a
+                    href="https://wa.me/8801XXXXXXXXX?text=Hi%20PrimeByte,%20I%20want%20a%20quote."
+                    style="
+                      color: #fff;
+                      border: 2px solid #fff;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      text-decoration: none;
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.background='#fff'; this.style.color='#0072ff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='#fff';"
+                    target="_blank"
+                    aria-label="Contact via WhatsApp"
+                  >
+                    <i class="fab fa-whatsapp me-2"></i> WhatsApp Us
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Mobile Focus -->
+            <div
+              class="carousel-item"
+              style="
+                background-image: url('https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2023/06/app-currently-not-available-alert-iphone.jpeg?w=1600&h=900&fit=crop');
+                background-size: cover;
+                background-position: center;
+              "
+              role="group"
+              aria-label="Slide 2 of 3, focusing on mobile application development"
+            >
+              <div class="carousel-caption container-fluid">
+                <h1 class="display-3 fw-bold text-white">
+                  Seamless mobile experiences for your customers.
+                </h1>
+                <p class="lead text-light my-4">
+                  Develop native and cross-platform mobile apps for Android and
+                  iOS markets.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-start">
+                  <a
+                    href="#portfolio"
+                    style="
+                      background: linear-gradient(135deg, #00c6ff, #0072ff);
+                      color: #fff;
+                      border: none;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      text-decoration: none;
+                      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)';"
+                  >
+                    View Mobile Portfolio
+                  </a>
+
+                  <button
+                    type="button"
+                    style="
+                      color: #fff;
+                      border: 2px solid #fff;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      background: transparent;
+                      box-shadow: none;
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.background='#fff'; this.style.color='#0072ff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='#fff';"
+                    data-bs-toggle="modal"
+                    data-bs-target="#contactModal"
+                  >
+                    Start Your App
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: eCommerce Focus -->
+            <div
+              class="carousel-item"
+              style="
+                background-image: url('https://diib.com/learn/wp-content/uploads/2020/10/best-ecommerce-website-design-cover.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+              role="group"
+              aria-label="Slide 3 of 3, highlighting eCommerce development"
+            >
+              <div class="carousel-caption container-fluid">
+                <h1 class="display-3 fw-bold text-white">
+                  Unlock online sales with powerful eCommerce platforms.
+                </h1>
+                <p class="lead text-light my-4">
+                  Secure, scalable online stores tailored for the local and
+                  international market.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-start">
+                  <button
+                    type="button"
+                    style="
+                      background: linear-gradient(135deg, #00c6ff, #0072ff);
+                      color: #fff;
+                      border: none;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 20px rgba(0,0,0,0.3)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)';"
+                    data-bs-toggle="modal"
+                    data-bs-target="#contactModal"
+                  >
+                    Get a Quote
+                  </button>
+
+                  <a
+                    href="#pricing"
+                    style="
+                      color: #fff;
+                      border: 2px solid #fff;
+                      border-radius: 50px;
+                      padding: 0.75rem 2rem;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      text-decoration: none;
+                      transition: all 0.3s ease;
+                    "
+                    onmouseover="this.style.background='#fff'; this.style.color='#0072ff';"
+                    onmouseout="this.style.background='transparent'; this.style.color='#fff';"
+                  >
+                    See Pricing
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hero-slider"
+            data-bs-slide="prev"
+            aria-label="Previous slide"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hero-slider"
+            data-bs-slide="next"
+            aria-label="Next slide"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 2: SERVICES
+        =================================================== -->
+      <section id="services" class="section-padding">
+        <div class="container">
+          <div class="text-center mb-5 reveal fade-up">
+            <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+              What We Do
+            </p>
+            <h2 class="display-5 fw-bold">Our Core Services</h2>
+            <p class="lead text-muted">
+              We provide a full spectrum of digital development, ensuring your
+              success from concept to launch.
+            </p>
+          </div>
+
+          <div class="row g-4 reveal stagger">
+            <!-- Service Card 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="h4 fw-bold">Custom Web Development</h3>
+                <p class="text-muted">
+                  Building secure, high-performance, and responsive websites
+                  using modern frameworks and cutting-edge tools.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="h4 fw-bold">Mobile App Development</h3>
+                <p class="text-muted">
+                  Native (Android/iOS) and hybrid app development focused on
+                  user experience and market needs.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-store"></i>
+                </div>
+                <h3 class="h4 fw-bold">E-commerce Solutions</h3>
+                <p class="text-muted">
+                  Designing and deploying robust online stores with secure
+                  payment gateways and inventory management.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="h4 fw-bold">Digital Strategy & SEO</h3>
+                <p class="text-muted">
+                  Guiding your online presence with data-driven strategy, SEO,
+                  and performance optimization.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-pen-nib"></i>
+                </div>
+                <h3 class="h4 fw-bold">UX/UI Design</h3>
+                <p class="text-muted">
+                  Focusing on intuitive user interface and exceptional user
+                  experience across all devices.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100">
+                <div
+                  class="icon-square bg-light text-center p-3 mb-3 d-inline-block"
+                  style="
+                    font-size: 2rem;
+                    border-radius: 0.75rem;
+                    color: var(--pb-highlight);
+                  "
+                >
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3 class="h4 fw-bold">Hosting & Maintenance</h3>
+                <p class="text-muted">
+                  Reliable cloud hosting, 24/7 monitoring, and ongoing
+                  maintenance to keep your platform running smoothly.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-sm btn-link p-0"
+                  style="color: var(--pb-accent)"
+                  >Learn More <i class="fas fa-arrow-right fa-sm ms-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 3: PORTFOLIO (FILTERABLE)
+        =================================================== -->
+      <section
+        id="portfolio"
+        class="section-padding"
+        style="background-color: var(--pb-card)"
+      >
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-5 reveal fade-up">
+            <p
+              class="text-uppercase fw-bold"
+              style="color: var(--pb-accent); letter-spacing: 2px"
+            >
+              Our Work
+            </p>
+            <h2 class="display-5 fw-bold">Featured Projects</h2>
+            <p class="lead text-muted">
+              A showcase of successful solutions tailored for growing businesses
+              in Bangladesh and beyond.
+            </p>
+          </div>
+
+          <!-- Filters -->
+          <div
+            class="d-flex justify-content-center flex-wrap mb-4 portfolio-filter reveal fade-up"
+            role="group"
+            aria-label="Portfolio filters"
+          >
+            <button
+              type="button"
+              class="btn btn-sm active"
+              style="
+                border-radius: 30px;
+                padding: 0.4rem 1rem;
+                font-weight: 600;
+              "
+              data-filter="all"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm"
+              style="
+                border-radius: 30px;
+                padding: 0.4rem 1rem;
+                font-weight: 600;
+              "
+              data-filter="web"
+            >
+              Web
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm"
+              style="
+                border-radius: 30px;
+                padding: 0.4rem 1rem;
+                font-weight: 600;
+              "
+              data-filter="mobile"
+            >
+              Mobile
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm"
+              style="
+                border-radius: 30px;
+                padding: 0.4rem 1rem;
+                font-weight: 600;
+              "
+              data-filter="ecommerce"
+            >
+              eCommerce
+            </button>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div class="row g-4 justify-content-center" id="portfolio-grid">
+            <!-- Portfolio Card Template -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item"
+              data-category="web ecommerce"
+            >
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://techcloudltd.com/wp-content/uploads/2024/05/Othoba.com_-1024x449.webp"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of a modern eCommerce platform"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  E-Shop BD
+                </h4>
+                <p class="small text-muted mb-0">
+                  Full-stack e-commerce solution with integrated payment.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item"
+              data-category="mobile"
+            >
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://elements-resized.envatousercontent.com/elements-cover-images/cc660176-c537-4cd0-ba9e-84f097e95a24?w=433&cf_fit=scale-down&q=85&format=auto&s=7b062ac20ad5cd6e280538df7e6df42195ef00782cb4ec41d5b5b958b3c3ed9a"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of a travel booking mobile application"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  BD Travel Guide
+                </h4>
+                <p class="small text-muted mb-0">
+                  Location-based tourism and travel itinerary app.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://nulledtheme.pro/wp-content/uploads/2024/02/atelier.jpg"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of a corporate landing page"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  Global Textiles Corp
+                </h4>
+                <p class="small text-muted mb-0">
+                  Professional corporate website and lead generation portal.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item"
+              data-category="web mobile"
+            >
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://eshikshakoshh.com/wp-content/uploads/2025/07/eshikshakosh.webp"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of an online education platform"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  E-Shikkha Portal
+                </h4>
+                <p class="small text-muted mb-0">
+                  Blended learning platform for K-12 students in Bangladesh.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item"
+              data-category="ecommerce"
+            >
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKVBiGEgssEAbbknByWA6W2uGgqrkM97BCUQ&s"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of an agriculture-focused e-commerce site"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  Krishok Bajar
+                </h4>
+                <p class="small text-muted mb-0">
+                  Direct-to-consumer agricultural product marketplace.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item"
+              data-category="mobile"
+            >
+              <div
+                class="portfolio-card p-3 h-100"
+                style="
+                  border-radius: 15px;
+                  background: #fff;
+                  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3WvS0py03ehvDCEBDr0EloHSkT5CTOF6wQ&s"
+                  class="img-fluid mb-3 rounded"
+                  alt="Mockup of a food delivery mobile app"
+                />
+                <h4
+                  class="h5 fw-bold portfolio-title"
+                  style="color: var(--pb-primary)"
+                >
+                  Food Rider
+                </h4>
+                <p class="small text-muted mb-0">
+                  GPS-enabled food delivery service app for drivers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hover Effect Script (Optional) -->
+        <script>
+          const portfolioCards = document.querySelectorAll(".portfolio-card");
+          portfolioCards.forEach((card) => {
+            card.addEventListener("mouseenter", () => {
+              card.style.transform = "translateY(-5px)";
+              card.style.boxShadow = "0 12px 25px rgba(0,0,0,0.15)";
+            });
+            card.addEventListener("mouseleave", () => {
+              card.style.transform = "translateY(0)";
+              card.style.boxShadow = "0 8px 20px rgba(0,0,0,0.08)";
+            });
+          });
+        </script>
+      </section>
+
+      <!-- ===================================================
+             SECTION 4: WHY PRIMEBYTE (STATS)
+        =================================================== -->
+      <section id="why-us" class="section-padding bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 reveal slide-left">
+              <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+                Why Choose Us?
+              </p>
+              <h2 class="display-5 fw-bold">The PrimeByte Advantage</h2>
+              <p class="lead text-muted">
+                We combine deep local market knowledge with world-class
+                technology standards to deliver scalable results.
+              </p>
+              <ul class="list-unstyled mt-4">
+                <li class="d-flex align-items-start mb-3">
+                  <i
+                    class="fas fa-check-circle fa-fw me-3 mt-1"
+                    style="color: var(--pb-highlight)"
+                  ></i>
+                  Market-driven development tailored for Bangladesh.
+                </li>
+                <li class="d-flex align-items-start mb-3">
+                  <i
+                    class="fas fa-check-circle fa-fw me-3 mt-1"
+                    style="color: var(--pb-highlight)"
+                  ></i>
+                  Transparency and collaboration from day one.
+                </li>
+                <li class="d-flex align-items-start">
+                  <i
+                    class="fas fa-check-circle fa-fw me-3 mt-1"
+                    style="color: var(--pb-highlight)"
+                  ></i>
+                  Post-launch support and optimization included.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Stats Counter -->
+            <div class="col-lg-6">
+              <div
+                class="row g-4 text-center reveal stagger"
+                id="stat-counters"
+              >
+                <div class="col-md-4 col-6">
+                  <div class="rounded-card p-4 h-100">
+                    <p
+                      class="display-4 fw-bold text-primary mb-1 count-target"
+                      data-target="95"
+                    >
+                      95
+                    </p>
+                    <p class="mb-0 text-muted">Client Satisfaction Rate (%)</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-6">
+                  <div class="rounded-card p-4 h-100">
+                    <p
+                      class="display-4 fw-bold mb-1"
+                      style="color: var(--pb-accent)"
+                    >
+                      <span class="count-target" data-target="150">150</span>
+                    </p>
+                    <p class="mb-0 text-muted">Projects Completed</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                  <div class="rounded-card p-4 h-100">
+                    <p
+                      class="display-4 fw-bold mb-1"
+                      style="color: var(--pb-highlight)"
+                    >
+                      <span class="count-target" data-target="8">8</span>
+                    </p>
+                    <p class="mb-0 text-muted">Years of Operation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 5: PROCESS
+        =================================================== -->
+      <section id="process" class="section-padding">
+        <div class="container">
+          <div class="text-center mb-5 reveal fade-up">
+            <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+              Our Methodology
+            </p>
+            <h2 class="display-5 fw-bold">How We Work Together</h2>
+            <p class="lead text-muted">
+              A transparent, four-step process designed for efficient delivery
+              and predictable outcomes.
+            </p>
+          </div>
+
+          <div class="row justify-content-center text-center reveal stagger">
+            <!-- Step 1: Discovery -->
+            <div class="col-lg-3 col-md-6 process-step mb-5 mb-lg-0">
+              <div class="process-line d-none d-lg-block"></div>
+              <div class="process-icon"><i class="fas fa-lightbulb"></i></div>
+              <h3 class="h5 fw-bold mt-3">1. Discovery</h3>
+              <p class="text-muted small">
+                Defining goals, requirements, and scope. The foundation of
+                success.
+              </p>
+            </div>
+
+            <!-- Step 2: Design -->
+            <div class="col-lg-3 col-md-6 process-step mb-5 mb-lg-0">
+              <div class="process-line d-none d-lg-block"></div>
+              <div
+                class="process-icon"
+                style="background-color: var(--pb-accent); color: white"
+              >
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h3 class="h5 fw-bold mt-3">2. Design</h3>
+              <p class="text-muted small">
+                Creating wireframes, prototypes, and a beautiful, functional
+                user interface.
+              </p>
+            </div>
+
+            <!-- Step 3: Develop -->
+            <div class="col-lg-3 col-md-6 process-step mb-5 mb-lg-0">
+              <div class="process-line d-none d-lg-block"></div>
+              <div class="process-icon"><i class="fas fa-code"></i></div>
+              <h3 class="h5 fw-bold mt-3">3. Develop</h3>
+              <p class="text-muted small">
+                Building the solution with clean code, rigorous testing, and
+                continuous feedback.
+              </p>
+            </div>
+
+            <!-- Step 4: Launch -->
+            <div class="col-lg-3 col-md-6 process-step">
+              <div
+                class="process-icon"
+                style="background-color: var(--pb-primary); color: white"
+              >
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 class="h5 fw-bold mt-3">4. Launch</h3>
+              <p class="text-muted small">
+                Deployment, quality assurance, and ongoing monitoring and
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 6: PRICING
+        =================================================== -->
+      <section id="pricing" class="section-padding bg-light">
+        <div class="container">
+          <div class="text-center mb-5 reveal fade-up">
+            <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+              Flexible Plans
+            </p>
+            <h2 class="display-5 fw-bold">Simple, Transparent Pricing</h2>
+            <p class="lead text-muted">
+              Find the perfect package for your business size and digital goals.
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center reveal stagger">
+            <!-- Plan 1: Starter -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-card rounded-card text-center h-100">
+                <h3 class="fw-bold mb-3">Starter</h3>
+                <p class="h1 fw-bold mb-4" style="color: var(--pb-primary)">
+                  <small class="h6 text-muted me-1">BDT</small> 35K
+                </p>
+                <ul
+                  class="list-unstyled text-start mx-auto"
+                  style="max-width: 250px"
+                >
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    5-Page Static Website
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Mobile Responsive Design
+                  </li>
+                  <li class="mb-2 text-muted">
+                    <i class="fas fa-times-circle fa-fw me-2"></i> CMS
+                    Integration (Optional)
+                  </li>
+                  <li class="mb-2 text-muted">
+                    <i class="fas fa-times-circle fa-fw me-2"></i> Custom
+                    Backend Logic
+                  </li>
+                  <li class="mb-2 text-muted">
+                    <i class="fas fa-times-circle fa-fw me-2"></i> Priority
+                    Support
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-primary mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            <!-- Plan 2: Business (Recommended) -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-card recommended text-center h-100">
+                <span class="badge-top">Most Popular</span>
+                <h3 class="fw-bold mb-3">Business</h3>
+                <p class="h1 fw-bold mb-4">
+                  <small class="h6 me-1" style="color: var(--pb-highlight)"
+                    >BDT</small
+                  >
+                  100K
+                </p>
+                <ul
+                  class="list-unstyled text-start mx-auto"
+                  style="max-width: 250px"
+                >
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-highlight)"
+                    ></i>
+                    Dynamic CMS Website (WordPress/Custom)
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-highlight)"
+                    ></i>
+                    Full Mobile Responsiveness
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-highlight)"
+                    ></i>
+                    Custom Backend Logic
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-highlight)"
+                    ></i>
+                    Initial SEO Optimization
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-highlight)"
+                    ></i>
+                    3 Months Standard Support
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-primary mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Select Plan
+                </button>
+              </div>
+            </div>
+
+            <!-- Plan 3: Enterprise -->
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-card rounded-card text-center h-100">
+                <h3 class="fw-bold mb-3">Enterprise</h3>
+                <p class="h1 fw-bold mb-4" style="color: var(--pb-primary)">
+                  <small class="h6 text-muted me-1">BDT</small> Custom
+                </p>
+                <ul
+                  class="list-unstyled text-start mx-auto"
+                  style="max-width: 250px"
+                >
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Custom App / Large-Scale eCommerce
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Dedicated Project Manager
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Advanced Integrations (API, ERP)
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Full Quality Assurance Cycle
+                  </li>
+                  <li class="mb-2">
+                    <i
+                      class="fas fa-check-circle fa-fw me-2"
+                      style="color: var(--pb-accent)"
+                    ></i>
+                    Priority Support & Maintenance
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn btn-primary mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Sales
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 7: TESTIMONIALS
+        =================================================== -->
+      <section id="testimonials" class="section-padding">
+        <div class="container">
+          <div class="text-center mb-5 reveal fade-up">
+            <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+              Client Feedback
+            </p>
+            <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+          </div>
+
+          <div class="row g-4 justify-content-center reveal stagger">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100 d-flex flex-column">
+                <i
+                  class="fas fa-quote-left fa-2x mb-3"
+                  style="color: var(--pb-highlight)"
+                ></i>
+                <p class="fst-italic mb-4 flex-grow-1">
+                  "PrimeByte delivered a phenomenal mobile app right on
+                  schedule. Their understanding of the local user base was
+                  invaluable. Highly recommend for any serious project."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://placehold.co/80x80/6B7280/ffffff?text=AD"
+                    class="testimonial-avatar me-3"
+                    alt="Avatar of Afsana Dilara"
+                  />
+                  <div>
+                    <h5 class="fw-bold mb-0" style="color: var(--pb-primary)">
+                      Afsana Dilara
+                    </h5>
+                    <p class="small text-muted mb-0">
+                      CEO, Tech Innovations Ltd.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100 d-flex flex-column">
+                <i
+                  class="fas fa-quote-left fa-2x mb-3"
+                  style="color: var(--pb-highlight)"
+                ></i>
+                <p class="fst-italic mb-4 flex-grow-1">
+                  "We needed a complex e-commerce site, and PrimeByte handled
+                  the entire process seamlessly. The communication was
+                  excellent, and the final product is fast and secure."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://placehold.co/80x80/003366/ffffff?text=MR"
+                    class="testimonial-avatar me-3"
+                    alt="Avatar of Mahmud Rahman"
+                  />
+                  <div>
+                    <h5 class="fw-bold mb-0" style="color: var(--pb-primary)">
+                      Mahmud Rahman
+                    </h5>
+                    <p class="small text-muted mb-0">Founder, LocalBazaar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded-card p-4 h-100 d-flex flex-column">
+                <i
+                  class="fas fa-quote-left fa-2x mb-3"
+                  style="color: var(--pb-highlight)"
+                ></i>
+                <p class="fst-italic mb-4 flex-grow-1">
+                  "Their team is professional and highly skilled. They turned
+                  our vague concept into a polished, revenue-generating web
+                  application. True partners in growth."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="https://placehold.co/80x80/003366/ffffff?text=TK"
+                    class="testimonial-avatar me-3"
+                    alt="Avatar of Tasmia Kabir"
+                  />
+                  <div>
+                    <h5 class="fw-bold mb-0" style="color: var(--pb-primary)">
+                      Tasmia Kabir
+                    </h5>
+                    <p class="small text-muted mb-0">
+                      Marketing Director, FinServe BD
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 8: ABOUT
+        =================================================== -->
+      <section id="about" class="section-padding bg-light overflow-hidden">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Image Column -->
+            <div
+              class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start reveal slide-left"
+            >
+              <img
+                src="img/team.png"
+                class="img-fluid rounded-3 w-100"
+                alt="Image of the PrimeByte development team collaborating"
+              />
+            </div>
+
+            <!-- Text Column -->
+            <div
+              class="col-12 col-lg-6 text-center text-lg-start reveal slide-right"
+            >
+              <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+                Our Story
+              </p>
+              <h2 class="fw-bold">
+                Driven by Innovation, Rooted in Bangladesh
+              </h2>
+              <p class="lead text-muted">
+                PrimeByte was founded with a clear mission: to elevate
+                Bangladeshi businesses through powerful digital technology.
+              </p>
+              <p>
+                We are a passionate team of designers, developers, and
+                strategists committed to crafting solutions that are not just
+                visually appealing, but engineered for performance and
+                scalability in the local market context.
+              </p>
+              <p class="mb-0">
+                Our goal is to be your most reliable partner in the journey of
+                digital transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+             SECTION 9: CONTACT
+        =================================================== -->
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="text-center mb-5 reveal fade-up">
+            <p class="text-uppercase fw-bold" style="color: var(--pb-accent)">
+              Let's Connect
+            </p>
+            <h2 class="display-5 fw-bold">Start Your Project Today</h2>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="rounded-card p-5 reveal fade-up">
+                <form
+                  action="#"
+                  method="POST"
+                  id="contactForm"
+                  onsubmit="return handleFormSubmit(event)"
+                >
+                  <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                      <label for="contactName" class="form-label"
+                        >Full Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contactName"
+                        name="name"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contactEmail" class="form-label"
+                        >Email Address *</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="contactEmail"
+                        name="email"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contactPhone" class="form-label"
+                        >Phone Number *</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="contactPhone"
+                        name="phone"
+                        required
+                        aria-required="true"
+                        pattern="[0-9]{10,15}"
+                        placeholder="e.g., 8801XXXXXXXXX"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contactProjectType" class="form-label"
+                        >Project Type</label
+                      >
+                      <select
+                        class="form-select"
+                        id="contactProjectType"
+                        name="projectType"
+                      >
+                        <option selected>Choose...</option>
+                        <option value="web">Website Development</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="ecommerce">E-commerce Solution</option>
+                        <option value="strategy">Digital Strategy</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="contactMessage" class="form-label"
+                      >Tell us about your project *</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="contactMessage"
+                      name="message"
+                      rows="4"
+                      required
+                      aria-required="true"
+                    ></textarea>
+                  </div>
+
+                  <div
+                    id="form-message"
+                    class="alert alert-success d-none"
+                    role="alert"
+                  ></div>
+
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    Send Inquiry
+                  </button>
+
+                  <p class="text-center text-muted small mt-3">
+                    Or, click here for instant chat:
+                  </p>
+                  <div class="d-grid">
+                    <a
+                      href="https://wa.me/8801XXXXXXXXX?text=Hi%20PrimeByte,%20I%20want%20a%20quote."
+                      class="btn btn-success btn-lg"
+                      target="_blank"
+                      aria-label="Contact PrimeByte instantly via WhatsApp"
+                    >
+                      <i class="fab fa-whatsapp me-2"></i> Quick WhatsApp Chat
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================
+         FOOTER
+    =================================================== -->
+    <footer
+      class="footer pt-5 pb-4"
+      style="background-color: #0b1818; color: #fff"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Brand & About -->
+          <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <img
+              src="img/logo.png"
+              alt="PrimeByte Logo"
+              style="height: 50px; margin-bottom: 0.5rem"
+            />
+                <span class="brand-text">
+        prime<span class="brand-x">X</span>Byte
+      </span>
+
+            <p class="small text-light">
+              Smart web & app solutions for Bangladesh. Committed to quality,
+              innovation, and client success.
+            </p>
+            <div
+              class="d-flex gap-3 mt-2 justify-content-center justify-content-lg-start"
+            >
+              <a
+                href="#"
+                style="color: #fff; font-size: 1.2rem"
+                onmouseover="this.style.color='rgb(0,198,255)';"
+                onmouseout="this.style.color='#fff';"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                style="color: #fff; font-size: 1.2rem"
+                onmouseover="this.style.color='rgb(0,198,255)';"
+                onmouseout="this.style.color='#fff';"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                style="color: #fff; font-size: 1.2rem"
+                onmouseover="this.style.color='rgb(0,198,255)';"
+                onmouseout="this.style.color='#fff';"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                style="color: #fff; font-size: 1.2rem"
+                onmouseover="this.style.color='rgb(0,198,255)';"
+                onmouseout="this.style.color='#fff';"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+            <h6
+              class="fw-bold mb-3"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgb(0, 198, 255),
+                  rgb(0, 114, 255)
+                );
+                -webkit-background-clip: text;
+                color: transparent;
+              "
+            >
+              Quick Links
+            </h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="#services"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+            <h6
+              class="fw-bold mb-3"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgb(0, 198, 255),
+                  rgb(0, 114, 255)
+                );
+                -webkit-background-clip: text;
+                color: transparent;
+              "
+            >
+              Resources
+            </h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="#"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Case Studies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-lg-4 col-md-4 text-center text-md-start">
+            <h6
+              class="fw-bold mb-3"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgb(0, 198, 255),
+                  rgb(0, 114, 255)
+                );
+                -webkit-background-clip: text;
+                color: transparent;
+              "
+            >
+              Legal
+            </h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="#"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  style="color: #ccc; text-decoration: none"
+                  onmouseover="this.style.color='rgb(0,198,255)';"
+                  onmouseout="this.style.color='#ccc';"
+                  >Contact Support</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="mt-4 mb-3" style="border-color: rgba(255, 255, 255, 0.1)" />
+
+        <!-- Copyright -->
+        <div class="text-center small text-light">
+          &copy; <span id="currentYear"></span> PrimeByte. All rights reserved.
+          Made with <i class="fas fa-heart text-danger"></i> in Bangladesh.
+        </div>
+      </div>
+
+      <script>
+        // Set current year automatically
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+
+    <!-- ===================================================
+         CONTACT MODAL
+    =================================================== -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-card">
+          <div class="modal-header border-0 pb-0">
+            <h5
+              class="modal-title fw-bold"
+              id="contactModalLabel"
+              style="color: var(--pb-primary)"
+            >
+              Get Your Free Quote
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p class="small text-muted mb-4">
+              Tell us about your project and we'll be in touch within one
+              business day.
+            </p>
+            <form
+              action="#"
+              method="POST"
+              id="modalContactForm"
+              onsubmit="return handleFormSubmit(event, true)"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Your Name *"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Your Email *"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <select
+                  class="form-select"
+                  name="projectType"
+                  aria-label="Project Type Selection"
+                >
+                  <option selected>I need a...</option>
+                  <option value="web">Website</option>
+                  <option value="mobile">Mobile App</option>
+                  <option value="ecommerce">E-commerce</option>
+                  <option value="strategy">Consultation</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="3"
+                  placeholder="Project details or message *"
+                  required
+                ></textarea>
+              </div>
+              <div
+                id="modal-form-message"
+                class="alert alert-success d-none"
+                role="alert"
+              ></div>
+              <button type="submit" class="btn btn-primary w-100 mb-2">
+                Send Request
+              </button>
+              <a
+                href="https://wa.me/8801XXXXXXXXX?text=Hi%20PrimeByte,%20I%20want%20a%20quote."
+                class="btn btn-success w-100"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp me-2"></i> Quick WhatsApp
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ===================================================
+         VANILLA JAVASCRIPT
+    =================================================== -->
+    <script>
+      // Set the current year for the footer
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      /* ---------------------------------------------------
+           1. Contact Form Submission Handler (Minimal JS)
+        --------------------------------------------------- */
+      function handleFormSubmit(event, isModal = false) {
+        event.preventDefault();
+
+        const form = isModal
+          ? document.getElementById("modalContactForm")
+          : document.getElementById("contactForm");
+        const messageElement = isModal
+          ? document.getElementById("modal-form-message")
+          : document.getElementById("form-message");
+
+        if (form.checkValidity()) {
+          // Simulate form submission success
+          console.log("Form submission simulated:", new FormData(form));
+
+          messageElement.textContent =
+            "Thank you! Your inquiry has been sent. We'll be in touch soon.";
+          messageElement.classList.remove("d-none", "alert-danger");
+          messageElement.classList.add("alert-success");
+
+          form.reset();
+
+          // If this was the main form, remove the alert after a delay
+          if (!isModal) {
+            setTimeout(() => {
+              messageElement.classList.add("d-none");
+            }, 5000);
+          }
+        } else {
+          // Should not happen if HTML5 validation is working, but fallback for safety
+          messageElement.textContent =
+            "Please fill in all required fields correctly.";
+          messageElement.classList.remove("d-none", "alert-success");
+          messageElement.classList.add("alert-danger");
+        }
+        return false;
+      }
+
+      /* ---------------------------------------------------
+           2. Portfolio Filter Logic
+        --------------------------------------------------- */
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(
+          ".portfolio-filter .btn"
+        );
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Update active state of buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const filter = button.getAttribute("data-filter");
+
+            // Filter logic
+            portfolioItems.forEach((item) => {
+              const category = item.getAttribute("data-category");
+
+              // Use setTimeout to ensure the hidden class is applied for CSS transition
+              item.classList.add("hidden");
+
+              setTimeout(() => {
+                if (filter === "all" || category.includes(filter)) {
+                  item.classList.remove("hidden");
+                }
+              }, 500); // 500ms matches the CSS transition time
+            });
+          });
+        });
+      });
+
+      /* ---------------------------------------------------
+           3. Intersection Observer (Scroll Reveal & Count-Up)
+        --------------------------------------------------- */
+      document.addEventListener("DOMContentLoaded", () => {
+        const reducedMotionQuery = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        );
+        const revealElements = document.querySelectorAll(".reveal");
+        const statTargets = document.querySelectorAll(".count-target");
+        let countersObserved = false;
+
+        if (reducedMotionQuery.matches) {
+          console.log(
+            "Reduced motion detected. Disabling scroll-reveal animations."
+          );
+          revealElements.forEach((el) => el.classList.add("is-visible"));
+          return; // Exit if reduced motion is preferred
+        }
+
+        // --- Count Up Function (If motion is NOT reduced) ---
+        function countUp(el) {
+          const target = parseInt(el.getAttribute("data-target"));
+          let current = 0;
+          const duration = 2000; // 2 seconds
+          const start = performance.now();
+
+          function updateCount(timestamp) {
+            const progress = (timestamp - start) / duration;
+            const value = Math.min(progress, 1) * target;
+            el.textContent = Math.floor(value);
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCount);
+            } else {
+              el.textContent = target; // Ensure final value is exact
+            }
+          }
+          requestAnimationFrame(updateCount);
+        }
+
+        // --- Intersection Observer Callback ---
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // 1. Reveal Elements
+              entry.target.classList.add("is-visible");
+
+              // 2. Stat Counter Trigger
+              if (entry.target.id === "stat-counters" && !countersObserved) {
+                statTargets.forEach(countUp);
+                countersObserved = true;
+              }
+
+              // Stop observing revealed elements
+              if (!entry.target.classList.contains("count-target")) {
+                observer.unobserve(entry.target);
+              }
+            }
+          });
+        };
+
+        const options = {
+          root: null, // viewport
+          rootMargin: "0px",
+          threshold: 0.15, // Start animation when 15% is visible
+        };
+
+        const observer = new IntersectionObserver(observerCallback, options);
+
+        // Observe all reveal elements
+        revealElements.forEach((el) => observer.observe(el));
+
+        // Observe the stat counters container specifically
+        const statContainer = document.getElementById("stat-counters");
+        if (statContainer) {
+          observer.observe(statContainer);
+        }
+      });
+    </script>
+  </body>
+</html>
